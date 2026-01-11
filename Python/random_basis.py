@@ -27,6 +27,6 @@ rng = np.random.default_rng()  # 设置局部随机种子
 rng.random()
 rng.shuffle(x=arr, axis=1)
 rng.choice(a=arr, size=(2, 3), replace=True, p=[0.5] * 2, axis=0)  # a是arr,size是抽取数目，replace是能否被抽取，p是抽取概率，axis是抽取轴
-rng.permutation(a=arr, axis=0)  # 打乱顺序
+rng.permutation(x=arr, axis=0)  # 打乱顺序
 rng.uniform(low=0.0, high=20.0, size=(2, 3))  # 均匀分布
 rng.integers(low=1, high=200, size=(2, 3), endpoint=True)  # endpoint是指是否包含high
